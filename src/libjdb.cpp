@@ -1,7 +1,7 @@
-#include <iostream>
-#include <libjdb/libjdb.hpp>
+// #include <iostream>
+// #include <libjdb/libjdb.hpp>
 
-void jdb::say_hello() {
-    std::cout << "Hello, jdb!\n";
-}
+// void jdb::say_hello() {
+//     std::cout << "Hello, jdb!\n";
+// }
 

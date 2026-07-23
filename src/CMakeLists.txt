@@ -1,4 +1,4 @@
-add_library(libjdb libjdb.cpp) 
+add_library(libjdb process.cpp pipe.cpp) 
 add_library(jdb::libjdb ALIAS libjdb) 
 
 set_target_properties( 

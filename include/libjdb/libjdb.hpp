@@ -1,9 +1,9 @@
-#ifndef JDB_LIBJDB_HPP
-#define JDB_LIBJDB_HPP
+// #ifndef JDB_LIBJDB_HPP
+// #define JDB_LIBJDB_HPP
 
 
-namespace jdb {
-    void say_hello();
-}
+// namespace jdb {
+//     void say_hello();
+// }
 
-#endif
+// #endif

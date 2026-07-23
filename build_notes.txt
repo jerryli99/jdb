@@ -4,9 +4,10 @@ git clone https://github.com/microsoft/vcpkg.git
 ./vcpkg/bootstrap-vcpkg.sh
 
 
-sudo apt install autoconf autoconf-archive automake libtool
+sudo apt install autoconf autoconf-archive automake libtool build-essentials
 
 cd back to the project:
+mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake
 

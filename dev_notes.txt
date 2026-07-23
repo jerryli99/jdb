@@ -1,0 +1,20 @@
+design decisions in classes:
+----------------------------------------------
+1. the process class (process.hpp)
+Used Named constructor idiom in c++ because if your constructor were public, a user might write process my_proc(1234, true, false);. 
+Looking at that code, it is impossible to tell if the code is starting a brand new process or hooking into an existing background task.
+
+ideally, a better way to show intent is like this:
+auto proc1 = process::launch("/bin/ls"); 
+auto proc2 = process::attach(5432); 
+
+the private constructor will be used in the static methods.
+-----------------------------------------------
+
+
+
+When developing this debugger on linux, things to overcome: 
+
+1. The Address Space Layout Randomization (ASLR)
+2. Yama Linux security (restricts the ptrace system call to protect against unauthorized memory access across processes)
+3. 
